@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
   },
   titleWrapper: {
-    padding: 20,
+    paddingLeft: 20,
+    paddingTop: 10,
   },
 });
