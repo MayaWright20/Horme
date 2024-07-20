@@ -4,6 +4,7 @@ export const COLORS = {
   LIGHT_ORANGE: "rgb(253, 228, 207)",
   ORANGE: "rgb(255, 207, 210)",
   PINK: "rgb(241, 192, 232)",
+  RED: "rgb(255, 90, 90)",
   PURPLE: "rgb(207, 186, 240)",
   DARK_BLUE: "rgb(163, 196, 243)",
   HIGHTLIGHT_DARK_BLUE: "rgb(96, 155, 238)",

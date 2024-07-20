@@ -1,3 +1,3 @@
-export interface I_HEADER {
+export interface HEADER {
   title: string;
 }

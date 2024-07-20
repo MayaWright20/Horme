@@ -11,21 +11,21 @@ export default function CalendarScreen() {
   return (
     <LinearBackground>
       <Header title="Calendar" />
-        <CalendarList
+      <CalendarList
         style={styles.calendar}
-          pastScrollRange={12}
-          futureScrollRange={12}
-          onDayPress={(day) => {
-            setSelected(day.dateString);
-          }}
-          markedDates={{
-            [selected]: {
-              selected: true,
-              disableTouchEvent: false,
-              selectedTextColor: COLORS.MINT_GREEN,
-            },
-          }}
-        />
+        pastScrollRange={12}
+        futureScrollRange={12}
+        onDayPress={(day) => {
+          setSelected(day.dateString);
+        }}
+        markedDates={{
+          [selected]: {
+            selected: true,
+            disableTouchEvent: false,
+            selectedTextColor: COLORS.MINT_GREEN,
+          },
+        }}
+      />
     </LinearBackground>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { I_HEADER } from "../../types/Types";
+import { HEADER } from "../../types/Types";
 
-export default function Header(props: I_HEADER) {
+export default function Header(props: HEADER) {
   return (
     <SafeAreaView>
       <View style={styles.titleWrapper}>

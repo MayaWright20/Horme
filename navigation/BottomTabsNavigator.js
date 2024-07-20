@@ -33,11 +33,7 @@ export default function BottomTabsNavigator() {
           tabBarLabel: "Calendar",
           tabBarIcon: ({ focused }) => {
             return (
-              <AntDesign 
-              name="home" 
-              size={24} 
-              color={getIconColor(focused)} 
-              />
+              <AntDesign name="home" size={24} color={getIconColor(focused)} />
             );
           },
         })}
