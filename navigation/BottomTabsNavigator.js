@@ -24,6 +24,7 @@ export default function BottomTabsNavigator() {
       barStyle={styles.container}
       activeColor={COLORS.HIGHTLIGHT_DARK_BLUE}
       inactiveColor={COLORS.MEDIUM_GREY}
+      style={styles.container}
     >
       <Tab.Screen
         name="Home"
@@ -32,7 +33,11 @@ export default function BottomTabsNavigator() {
           tabBarLabel: "Calendar",
           tabBarIcon: ({ focused }) => {
             return (
-              <AntDesign name="home" size={24} color={getIconColor(focused)} />
+              <AntDesign 
+              name="home" 
+              size={24} 
+              color={getIconColor(focused)} 
+              />
             );
           },
         })}
@@ -60,5 +65,7 @@ export default function BottomTabsNavigator() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.WHITE,
+    borderTopWidth: 2,
+    borderColor: COLORS.LIGHT_GREY,
   },
 });

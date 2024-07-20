@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Calendar, LocaleConfig } from "react-native-calendars";
+import { CalendarList } from "react-native-calendars";
 import LinearBackground from "../components/layout/LinearBackground";
 import Header from "../components/layout/Header";
-import { ScrollView, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { COLORS } from "../constants/Colors";
 
 export default function CalendarScreen() {
@@ -11,8 +11,10 @@ export default function CalendarScreen() {
   return (
     <LinearBackground>
       <Header title="Calendar" />
-      <ScrollView style={styles.scrollview}>
-        <Calendar
+        <CalendarList
+        style={styles.calendar}
+          pastScrollRange={12}
+          futureScrollRange={12}
           onDayPress={(day) => {
             setSelected(day.dateString);
           }}
@@ -24,16 +26,12 @@ export default function CalendarScreen() {
             },
           }}
         />
-      </ScrollView>
     </LinearBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  scrollview: {
-    backgroundColor: COLORS.WHITE,
-    borderBottomColor: COLORS.LIGHT_GREY,
-    borderBottomWidth: 1,
+  calendar: {
     borderTopRightRadius: 30,
     borderTopLeftRadius: 30,
     paddingTop: 20,
