@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { COLORS } from "../constants/Colors.ts";
+import { COLORS } from "../../constants/Colors.ts";
 
 export default function LinearBackground({ children }: { children: any }) {
   return (

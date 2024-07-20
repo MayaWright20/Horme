@@ -1,11 +1,11 @@
 import React from "react";
-import { Text } from "react-native";
-import LinearBackground from "../constants/LinearBackground";
+import LinearBackground from "../components/layout/LinearBackground";
+import Header from "../components/layout/Header";
 
 export default function CalendarScreen() {
   return (
     <LinearBackground>
-      <Text>CalendarScreen</Text>
+      <Header title="Calendar" />
     </LinearBackground>
   );
 }
