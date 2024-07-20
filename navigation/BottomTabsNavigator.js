@@ -3,7 +3,6 @@ import { useTheme } from "react-native-paper";
 import { AntDesign } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { StyleSheet } from "react-native";
-import { useNavigationFocus } from "@react-navigation/native";
 
 import CalendarScreen from "../screens/CalendarScreen";
 import HomeScreen from "../screens/HomeScreen";
