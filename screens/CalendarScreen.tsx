@@ -21,7 +21,7 @@ export default function CalendarScreen() {
           markedDates={{
             [selected]: {
               selected: true,
-              disableTouchEvent: true,
+              disableTouchEvent: false,
               selectedTextColor: COLORS.MINT_GREEN,
             },
           }}
