@@ -8,7 +8,7 @@ export default function LinearBackground({ children }: { children: any }) {
     <LinearGradient
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 0 }}
-      colors={[COLORS.ORANGE, COLORS.LIGHT_GREY, COLORS.MEDIUM_BLUE]}
+      colors={[COLORS.MEDIUM_BLUE, COLORS.MINT_GREEN, COLORS.MEDIUM_BLUE]}
       style={styles.linearGradient}
     >
       {children}
